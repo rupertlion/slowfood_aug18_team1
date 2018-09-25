@@ -7,9 +7,8 @@ Feature: List categories
     Background: 
         Given the following category exists
             | name      |
-            | Desserts  | 
+            | Mains     | 
 
     Scenario: Category successfully shown on landing page
         When I visit the landing page
-        Then I should see "Desserts"
-      
+        Then I should see "Mains"
