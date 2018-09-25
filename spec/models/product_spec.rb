@@ -1,6 +1,6 @@
 require 'rails_helper'
 
-Rspec.describe Product, type: :model do
+RSpec.describe Product, type: :model do
     describe 'DB table' do
         it { is_expected.to have_db_column :id }
         it { is_expected.to have_db_column :name }
@@ -20,4 +20,3 @@ Rspec.describe Product, type: :model do
         end
     end
 end
-    
