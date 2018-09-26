@@ -1,4 +1,4 @@
-Given("the following product exists") do |table|
+Given("the following products exist") do |table|
     table.hashes.each do |product|
       category = Category.find_by(name: product[:category])
       product.except!('category')
@@ -6,7 +6,7 @@ Given("the following product exists") do |table|
     end
   end
 
-  Given("the following category exists") do |table|
+  Given("the following categories exist") do |table|
     table.hashes.each do |category|
       Category.create!(category)
   end

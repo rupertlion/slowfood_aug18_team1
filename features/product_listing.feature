@@ -5,10 +5,10 @@ Feature: List products
     I would like to see the products available with a name, description and price
 
     Background: 
-        Given the following category exists
+        Given the following categories exist
             | name  |
             | Mains |
-        And the following product exists
+        And the following products exist
             | name      | description                                 | price | category |
             | Meatballs | Delicious pork balls in a rich tomato sauce | 190   | Mains    |
 
