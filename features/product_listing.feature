@@ -1,3 +1,5 @@
+@javascript
+
 Feature: List products
 
     As a user,
