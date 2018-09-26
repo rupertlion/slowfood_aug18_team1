@@ -3,5 +3,6 @@ FactoryBot.define do
     name { "MyString" }
     description { "MyText" }
     price { 1.5 }
-  end
+    category { FactoryBot.create(:category) }
+    end
 end
