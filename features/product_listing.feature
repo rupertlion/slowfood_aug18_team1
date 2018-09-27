@@ -15,7 +15,7 @@ Feature: List products
             | Meatballs | Delicious pork balls in a rich tomato sauce | 190   | Mains    |
 
     Scenario: Product successfully shown on landing page
-        When I visit the landing page
+        Given That I am on the landing page
         Then I should see "Meatballs"
         And I should see "Delicious pork balls in a rich tomato sauce"
         And I should see "190"
