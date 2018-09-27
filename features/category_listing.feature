@@ -16,7 +16,7 @@ Feature: List categories
             | Trifle    | Awesome jelly, sponge and custard           | 120   | Desserts |
 
     Scenario: Category successfully shown on landing page
-        When I visit the landing page
+        Given That I am on the landing page
         Then I should see "Mains"
         Then I should see "Desserts"
         Then I should see "Meatballs"
