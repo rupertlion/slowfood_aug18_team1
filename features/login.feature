@@ -15,7 +15,7 @@ Feature: Login capabilities
         And I fill in "Email" with "email@email.com"
         And I fill in "Password" with "mypassword"
         And I click on the "Log in" link
-        Then I see the message "Welcome! You have signed up successfully."
+        Then I see the message "Signed in successfully."
 
 
 
