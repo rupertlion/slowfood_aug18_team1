@@ -13,7 +13,7 @@ Then("I fill in {string} with {string}") do |field, content|
 end
 
 Then("I see the message {string}") do |content|
-    expect(page.current_path).to have_content content 
+    expect(page).to have_content content 
 end
 
 Then("I am on the login page") do
