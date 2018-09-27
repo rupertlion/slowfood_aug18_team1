@@ -2,6 +2,6 @@ Given("That I am on the landing page") do
     visit root_path  
 end
 
-Then("I should see a navbar") do
-    expect(page).to have_css '#navbar'
+When("I visit the landing page") do
+    visit root_path
 end
