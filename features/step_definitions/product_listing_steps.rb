@@ -8,6 +8,6 @@ Given("the following products exist") do |table|
 
 Given("the following categories exist") do |table|
   table.hashes.each do |category|
-    Category.create(category)
+    create(:category, category)
   end
 end
