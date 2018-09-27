@@ -6,6 +6,6 @@ Then("I should see {string}") do |content|
     expect(page).to have_content content
 end
 
-Then("show me the page") do
-    save_and_open_page
+Then("I see the message {string}") do |content|
+    expect(page).to have_content content 
 end
