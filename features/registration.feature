@@ -12,4 +12,4 @@ Feature: Registration
         And I fill in "Password" with "mypassword"
         And I fill in "Password confirmation" with "mypassword"        
         And I click on the "Sign up" link
-        Then I see the message "Signed in successfully."
+        Then I see the message "You have signed up successfully."
