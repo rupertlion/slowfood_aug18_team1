@@ -4,18 +4,6 @@ Given("the following registered users exist") do |table|
     end
 end
   
-Given("I click on the {string} link") do |link|
-    click_on link
-end
-
-Then("I fill in {string} with {string}") do |field, content|
-    fill_in field, with: content    
-end
-
-Then("I see the message {string}") do |content|
-    expect(page).to have_content content 
-end
-
 Then("I am on the login page") do
     expect(page.current_path).to eq new_user_session_path
 end
