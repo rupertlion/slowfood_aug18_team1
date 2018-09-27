@@ -16,6 +16,6 @@ Then("I see the message {string}") do |content|
     expect(page.current_path).to have_content content 
 end
 
-Then("I am on the {string} page") do |login|
-    expect(page.current_path).to eq login_path(login)
+Then("I am on the login page") do
+    expect(page.current_path).to eq new_user_session_path
 end
