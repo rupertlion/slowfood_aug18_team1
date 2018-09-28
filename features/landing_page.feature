@@ -5,6 +5,5 @@ Feature: Landing page
 
     Scenario: Landing page 
         Given That I am on the landing page
-        Then I should see a navbar
         And I should see "Welcome to restaurant Hungry No More!"
         And I should see "Contact info"
