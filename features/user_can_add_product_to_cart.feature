@@ -24,8 +24,8 @@ Feature: User can add product to cart
         And I should see "Delicious pork balls in a rich tomato sauce"
         And I should see "190"
         And I click on the "Add to cart" link
-        And I click on the "Cart" link
-        Then I am on the cart page
+        And I click on the "Proceed to checkout" link
+        Then I am on the checkout page
         And I should see "Meatballs"
         And I should see "Delicious pork balls in a rich tomato sauce"
         And I should see "190"
