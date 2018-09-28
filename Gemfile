@@ -28,6 +28,7 @@ group :development, :test do
   gem 'selenium-webdriver'
   gem 'faker'
   gem 'devise'
+  gem 'cartify', github: 'CraftAcademy/cartify', branch: 'rails_5_2'
 end
 
 group :development do
