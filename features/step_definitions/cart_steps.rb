@@ -1,5 +1,5 @@
 Given("the user is logged in as {string}") do |email|
-    user = create(:user)
+    user = User.find_by(email: email)
     login_as(user, scope: :user)
 end
   
