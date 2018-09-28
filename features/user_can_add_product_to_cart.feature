@@ -16,7 +16,7 @@ Feature: User can add product to cart
         And the following registered users exist
             | email           | password   | 
             | email@email.com | mypassword |
-        And the user is logged in
+        And the user is logged in as "email@email.com"
 
     Scenario: Product successfully shown on landing page
         Given That I am on the landing page

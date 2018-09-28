@@ -1,5 +1,6 @@
-Given("the user is logged in") do
-    user_signed_in?
+Given("the user is logged in as {string}") do |email|
+    user = create(:user)
+    login_as(user, scope: :user)
 end
   
 Then("I am on the cart page") do
