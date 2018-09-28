@@ -4,3 +4,4 @@
         %p= product.name
         %p= product.description
         %p= product.price 
+        = add_to_cart(product, 1, "Add to cart") if user_signed_in? 
