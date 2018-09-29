@@ -11,3 +11,14 @@ Given("the following categories exist") do |table|
     create(:category, category)
   end
 end
+
+Given("the following registered users exist") do |table|
+    table.hashes.each do |user|
+        create(:user, user)
+    end
+end
+
+Given("the user is logged in as {string}") do |email|
+  user = User.find_by(email: email)
+  login_as(user, scope: :user)
+end
