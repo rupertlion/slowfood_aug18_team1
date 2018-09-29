@@ -18,7 +18,7 @@ Feature: User can add product to cart
             | email@email.com | mypassword |
         And the user is logged in as "email@email.com"
 
-    Scenario: Product successfully shown on landing page
+    Scenario: Selected product successfully shown in 
         Given That I am on the landing page
         And I should see "Meatballs"
         And I should see "Delicious pork balls in a rich tomato sauce"

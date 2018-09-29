@@ -19,4 +19,4 @@ Feature: List products
         Then I should see "Meatballs"
         And then I wait 2 seconds
         And I should see "Delicious pork balls in a rich tomato sauce"
-        And I should see "190"
+        And I should see "190" 
