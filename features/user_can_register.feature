@@ -5,7 +5,7 @@ Feature: Registration
 
     Scenario: Successfull registration as a new user
         Given That I am on the landing page
-        And I click on the "Login/Register" link        
+        And I click on the "Login" link        
         And I click on the "Sign up" link
         Then I am on the signup page
         And I fill in "Email" with "email@email.com"
