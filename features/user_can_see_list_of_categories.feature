@@ -1,4 +1,3 @@
-
 Feature: List categories
 
     As a user,
