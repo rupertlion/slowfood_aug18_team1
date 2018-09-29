@@ -1,6 +1,12 @@
+- if user_signed_in?
+    = link_to "Logout", destroy_user_session_path, method: :delete
+- else
+    = link_to "Login", new_user_session_path
+= render 'partials/welcome'
 -@categories.each do |category|
     %p= category.name
     -category.products.each do |product|
         %p= product.name
         %p= product.description
         %p= product.price 
+        = add_to_cart(product, 1, "Add to cart") if user_signed_in? 
