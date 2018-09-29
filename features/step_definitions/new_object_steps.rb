@@ -17,3 +17,8 @@ Given("the following registered users exist") do |table|
         create(:user, user)
     end
 end
+
+Given("the user is logged in as {string}") do |email|
+  user = User.find_by(email: email)
+  login_as(user, scope: :user)
+end
