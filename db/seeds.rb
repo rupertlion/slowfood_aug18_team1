@@ -6,7 +6,7 @@ categories = Category.create([{ name: 'Starters'}, {name: 'Mains'}, {name: 'Dess
   description:Faker::Food.description, price: rand(20..900), category: categories.first )
 end
 
-3.times do
+3.times do  
   Product.create!(name: Faker::Food.dish,
   description:Faker::Food.description, price: rand(20..900), category: categories.second )
 end
