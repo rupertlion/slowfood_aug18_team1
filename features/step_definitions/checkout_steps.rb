@@ -3,7 +3,7 @@ Then("I click on {string}") do |link|
 end
 
 Then("I should be on the delivery page") do
-    expect(page).to eq cartify.(settings_addresses) 
+    expect(page).to have_current_path('/checkout/delivery')
 end
 
 Then("I click on the billing checkbox") do
