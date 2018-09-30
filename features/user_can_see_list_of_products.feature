@@ -18,4 +18,4 @@ Feature: List products
         Given That I am on the landing page
         Then I should see "Meatballs"
         And I should see "Delicious pork balls in a rich tomato sauce"
-        And I should see "190"
+        And I should see "190" 
