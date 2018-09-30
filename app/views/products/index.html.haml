@@ -6,9 +6,11 @@
 = link_to "Proceed to checkout", cartify.cart_path if current_order
 = render 'partials/welcome'
 -@categories.each do |category|
-    %p= category.name
-    -category.products.each do |product|
-        %p= product.name
-        %p= product.description
-        %p= product.price 
-        = add_to_cart(product, 1, "Add to cart") if user_signed_in? 
+    .container.mx-auto
+    .table
+        %p= category.name
+        -category.products.each do |product|
+            %p= product.name
+            %p= product.description
+            %p= product.price 
+            = add_to_cart(product, 1, "Add to cart") if user_signed_in? 
