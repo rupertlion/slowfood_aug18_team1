@@ -13,3 +13,7 @@ end
 Then("I fill in {string} with {string}") do |field, content|
     fill_in field, with: content    
 end
+
+Then("then I wait {int} seconds") do |seconds|
+    sleep seconds
+end
