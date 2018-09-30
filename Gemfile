@@ -13,6 +13,7 @@ gem 'sass-rails', '~> 5.0'
 gem 'uglifier', '>= 1.3.0'
 gem 'turbolinks', '~> 5'
 gem 'bootsnap', '>= 1.1.0', require: false
+gem 'cartify', github: 'CraftAcademy/cartify', branch: 'rails_5_2'
 
 
 group :development, :test do
@@ -28,7 +29,6 @@ group :development, :test do
   gem 'selenium-webdriver'
   gem 'faker'
   gem 'devise'
-  gem 'cartify', github: 'CraftAcademy/cartify', branch: 'rails_5_2'
 end
 
 group :development do

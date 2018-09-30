@@ -1,9 +1,9 @@
 GIT
   remote: https://github.com/CraftAcademy/cartify.git
-  revision: e03d073a59b28552701b8932cb242eec7faea1d9
+  revision: 5382f3fcf87b332a3e91a9c871b1edff57125025
   branch: rails_5_2
   specs:
-    cartify (0.2.7.pre.custom)
+    cartify (0.2.9.pre.custom)
       bootstrap (~> 4.1, >= 4.1.1)
       country_select (~> 3.1)
       devise (~> 4.3)
@@ -403,4 +403,4 @@ RUBY VERSION
    ruby 2.4.1p111
 
 BUNDLED WITH
-   1.16.5
+   1.17.0.pre.1
