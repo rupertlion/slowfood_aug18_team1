@@ -21,3 +21,7 @@ end
 Then("I am on the login page") do
     expect(page.current_path).to eq new_user_session_path
 end
+
+Then("I should be on the delivery page") do
+    expect(page).to have_current_path('/checkout/delivery')
+end

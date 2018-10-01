@@ -16,4 +16,4 @@ end
 
 Then("then I wait {int} seconds") do |seconds|
     sleep seconds
-end 
+end
