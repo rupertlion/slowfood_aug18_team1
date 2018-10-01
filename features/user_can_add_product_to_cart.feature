@@ -25,6 +25,7 @@ Feature: User can add product to cart
         And I should see "190"
         And I click on the "Add to cart" link
         And I click on the "Proceed to checkout" link
+        And then I wait 2 seconds
         Then I am on the checkout page
         And I should see "Meatballs"
         And I should see "190"
