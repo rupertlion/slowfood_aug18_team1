@@ -35,7 +35,7 @@ Feature: Products in cart
         And I fill in "Address" with "101 Hemgatan" 
         And I fill in "City" with "Stockholm" 
         And I fill in "Zip" with "12345"
-        And I select "Country" and choose "Sweden"
+        And I select a country option
         And I fill in "Phone" with "123456789"   
         And I click on the "Save and Continue" link
         Then I should be on the delivery page
